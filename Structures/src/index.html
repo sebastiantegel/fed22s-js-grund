@@ -6,6 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/main.js"></script>
+    <script src="js/firstVersion.js"></script>
+    <script src="js/secondVersion.js"></script>
+    <link href="scss/main.scss" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h3>First version</h3>
+      <input type="number" id="givenNumberFirst" />
+      <button type="button" onclick="saveFirstGivenNumber()">Spara</button>
+
+      <input type="number" id="guessFirst" />
+      <button type="button" onclick="guess()">Gissa</button>
+    </section>
+
+    <section>
+      <h3>Second version</h3>
+
+      <div id="givenNumberContainer" class="visible">
+        <input type="number" id="givenNumber" />
+        <button type="button" onclick="saveGivenNumber()">Spara</button>
+      </div>
+      <div id="gameContainer" class="invisible">
+        <button type="button" onclick="playGame()">Spela</button>
+      </div>
+    </section>
+  </body>
 </html>

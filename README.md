@@ -18,3 +18,10 @@ I detta projekt går vi igenom if/else och loopar. Strukturer som vi behöver f�
 - [W3Schools - Javascript (loop - for)](https://www.w3schools.com/js/js_loop_while.asp)
 - [W3Schools - Javascript (DOM - Start)](https://www.w3schools.com/js/js_htmldom.asp)
 - [W3Schools - Javascript (DOM - End)](https://www.w3schools.com/js/js_htmldom_methods.asp)
+
+## Events
+
+I denna demo tittar vi närmare på olika händelser, vad vi kan göra för att förbättra separationen mellan html och js. 
+
+- [W3Schools - Javascript (events)](https://www.w3schools.com/js/js_events.asp)
+- [W3Schools - Javascript (addEventListener)](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
