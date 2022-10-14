@@ -21,7 +21,7 @@ I detta projekt går vi igenom if/else och loopar. Strukturer som vi behöver f�
 
 ## Events
 
-I denna demo tittar vi närmare på olika händelser, vad vi kan göra för att förbättra separationen mellan html och js. 
+I denna demo tittar vi närmare på olika händelser, vad vi kan göra för att förbättra separationen mellan html och js.
 
 - [W3Schools - Javascript (events)](https://www.w3schools.com/js/js_events.asp)
 - [W3Schools - Javascript (addEventListener)](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
