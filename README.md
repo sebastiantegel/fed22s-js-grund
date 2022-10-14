@@ -25,3 +25,4 @@ I denna demo tittar vi närmare på olika händelser, vad vi kan göra för att 
 
 - [W3Schools - Javascript (events)](https://www.w3schools.com/js/js_events.asp)
 - [W3Schools - Javascript (addEventListener)](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
+- [W3Schools - Javascript (functions)](https://www.w3schools.com/js/js_functions.asp)
