@@ -26,3 +26,11 @@ I denna demo tittar vi närmare på olika händelser, vad vi kan göra för att 
 - [W3Schools - Javascript (events)](https://www.w3schools.com/js/js_events.asp)
 - [W3Schools - Javascript (addEventListener)](https://www.w3schools.com/jsref/met_document_addeventlistener.asp)
 - [W3Schools - Javascript (functions)](https://www.w3schools.com/js/js_functions.asp)
+
+## Listor/Arrays
+
+I denna demo kommer vi att introducera listor genom att först titta på hur vi kan hantera texter på olika sätt. Vi använder loopar igen för att visa hur vi kan använda listor och försöker göra lite mer dynamiska loopar genom att utgå från listornas längd.
+
+- [W3Schools - Javascript (string methods)](https://www.w3schools.com/js/js_string_methods.asp)
+- [W3Schools - Javascript (arrays)](https://www.w3schools.com/js/js_arrays.asp)
+- [W3Schools - Javascript (array methods)](https://www.w3schools.com/js/js_array_methods.asp)
