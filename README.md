@@ -34,3 +34,11 @@ I denna demo kommer vi att introducera listor genom att först titta på hur vi 
 - [W3Schools - Javascript (string methods)](https://www.w3schools.com/js/js_string_methods.asp)
 - [W3Schools - Javascript (arrays)](https://www.w3schools.com/js/js_arrays.asp)
 - [W3Schools - Javascript (array methods)](https://www.w3schools.com/js/js_array_methods.asp)
+
+## Objects
+
+I detta projekt går vi igenom grunderna i objekt och reder ut egenskaper och värde. Sedan utökar vi till att skapa klasser och konstruktorer för att skapa våra objekt och kontrollerar att webbläsaren kan hantera dessa. 
+
+- [W3Schools - Object](https://www.w3schools.com/js/js_objects.asp)
+- [W3Schools - Objects and properties](https://www.w3schools.com/js/js_object_properties.asp)
+- [W3SChools - Class](https://www.w3schools.com/js/js_class_intro.asp)
