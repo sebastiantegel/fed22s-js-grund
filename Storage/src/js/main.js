@@ -50,3 +50,13 @@ let newCar = new Car(myCarAsObj.color, myCarAsObj.speed);
 newCar.odoMeter = myCarAsObj.odoMeter;
 
 console.log(newCar);
+
+let cars = [myCar, someOtherCar];
+
+localStorage.setItem("cars", JSON.stringify(cars));
+
+let carsFromLS = JSON.parse(localStorage.getItem("cars"));
+
+for (let i = 0; i < carsFromLS.length; i++) {
+  console.log(carsFromLS[i]);
+}
