@@ -42,3 +42,11 @@ I detta projekt går vi igenom grunderna i objekt och reder ut egenskaper och v�
 - [W3Schools - Object](https://www.w3schools.com/js/js_objects.asp)
 - [W3Schools - Objects and properties](https://www.w3schools.com/js/js_object_properties.asp)
 - [W3SChools - Class](https://www.w3schools.com/js/js_class_intro.asp)
+
+## Class/functions and localStorage
+
+Nu börjar vu titta mer på mer komplicerade klasser som innehåller funktioner och hur dessa kan användas. Sedan lagrar vi våra objekt i localStorage för att bygga förståelse för hur vi måste omvandla objekt till texter och tvärtom.
+
+- [W3Schools - classes](https://www.w3schools.com/js/js_class_intro.asp)
+- [W3Schools - localstorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
+- [W3Schools - JSON](https://www.w3schools.com/jsref/jsref_obj_json.asp)
