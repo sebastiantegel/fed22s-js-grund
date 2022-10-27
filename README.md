@@ -50,3 +50,12 @@ Nu börjar vu titta mer på mer komplicerade klasser som innehåller funktioner 
 - [W3Schools - classes](https://www.w3schools.com/js/js_class_intro.asp)
 - [W3Schools - localstorage](https://www.w3schools.com/jsref/prop_win_localstorage.asp)
 - [W3Schools - JSON](https://www.w3schools.com/jsref/jsref_obj_json.asp)
+
+## BOM
+
+I detta projekt tittar vi närmare på vad vi kan göra med history, setTimeout och setInterval. Sedan använder vi geoLocation för att testa lite asynkrona saker. För att underlätta en hel del med loopar introduceras nu också map.
+
+- [W3Schools - window](https://www.w3schools.com/js/js_window.asp)
+- [W3Schools - window - location](https://www.w3schools.com/js/js_window_location.asp)
+- [W3Schools - window - history](https://www.w3schools.com/js/js_window_history.asp)
+- [W3Schools - goeLocation](https://www.w3schools.com/js/js_api_geolocation.asp)
