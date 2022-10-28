@@ -1,4 +1,5 @@
 import { Car } from "./car";
+import { Doll } from "./doll";
 
 document.getElementById("goBack").addEventListener("click", goBack);
 document.getElementById("goForward").addEventListener("click", goForward);
@@ -80,4 +81,58 @@ function handleClick(car) {
   clickedCars.push(car);
 
   localStorage.setItem("cars", JSON.stringify(clickedCars));
+}
+
+// Skapa listan med dockor
+let dolls = [
+  new Doll("blonde", 20, 1953),
+  new Doll("brown", 20, 1960),
+  new Doll("orange", 17, 1990),
+];
+
+// Funktion som skall köras varje gång en användare klickar på en docka
+// parametern doll är det objekt som användaren klickade på
+const handleDollClick = (doll) => {
+  console.log("Du klickade på", doll);
+
+  // Hitta vår section som skall visa detaljinformation
+  let informationSection = document.getElementById("dollDetails");
+
+  // Töm vår sektion på eventuellt gammal information
+  informationSection.innerHTML = "";
+
+  // Skapa <p></p>
+  let hairColor = document.createElement("p");
+  let age = document.createElement("p");
+  let year = document.createElement("p");
+
+  // Ändra innehållet i våra <p></p>
+  hairColor.innerHTML = doll.hairColor;
+  age.innerHTML = doll.age;
+  year.innerHTML = doll.year;
+
+  // Lägg till <p></p> till vår section så att de syns
+  informationSection.appendChild(hairColor);
+  informationSection.appendChild(age);
+  informationSection.appendChild(year);
+};
+
+// Loopa igenom dockorna för att presentera dem på skärmen
+for (let i = 0; i < dolls.length; i++) {
+  // Skapa en <div></div>
+  let doll = document.createElement("div");
+
+  // Ändra <div></div> så att en egenskap från objekten syns
+  doll.innerHTML = dolls[i].hairColor;
+
+  // Här! Lyssna efter click på våra div-element. När klicket inträffar, kör
+  // den anonyma funktionen. I denna anonyma funktion, anropa handleDollClick
+  // och skicka det objekt som vi just nu höll på att loopa igenom. Detta gör
+  // att rätt objekt skickas till funktionen.
+  doll.addEventListener("click", () => {
+    handleDollClick(dolls[i]);
+  });
+
+  // Lägg till <div></div> så att de syns
+  document.body.appendChild(doll);
 }
