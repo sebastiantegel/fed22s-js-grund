@@ -59,3 +59,13 @@ I detta projekt tittar vi närmare på vad vi kan göra med history, setTimeout 
 - [W3Schools - window - location](https://www.w3schools.com/js/js_window_location.asp)
 - [W3Schools - window - history](https://www.w3schools.com/js/js_window_history.asp)
 - [W3Schools - goeLocation](https://www.w3schools.com/js/js_api_geolocation.asp)
+
+## Ajax
+
+Nu börjar det hända saker! Vi kommer att träna lite på att använda promise-objekt. Därefter går vi vidare till att göra färdiga fetch-anrop mot omdbapi, ett api som hjälper oss med filmer. Sist installerar vi axios för att testa en tredjepartslösning istället för fetch.
+
+- [W3Schools - fetch](https://www.w3schools.com/js/js_api_fetch.asp)
+- [W3Schools - promises](https://www.w3schools.com/Js/js_promise.asp)
+- [Javascript.info - promises](https://javascript.info/promise-basics)
+- [Axios - axios](https://axios-http.com/)
+- [OmdbAPI - home](http://omdbapi.com/)
