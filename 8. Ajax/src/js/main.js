@@ -1,4 +1,5 @@
 import axios from "axios";
+import { OmdbResponse } from "./models/omdbresponse";
 
 console.log("Start");
 
@@ -29,30 +30,33 @@ promise.then(
 
 console.log("End");
 
-// fetch("http://omdbapi.com?apikey=416ed51a&s=star")
-//   .then((response) => response.json())
-//   .then((data) => {
-//     handleData(data);
-//   });
+fetch("http://omdbapi.com?apikey=416ed51a&s=star")
+  .then((response) => response.json())
+  .then((data) => {
+    let result = new OmdbResponse(data.totalResults, data.Search);
+    console.log("Result:", result);
 
-axios.get("http://omdbapi.com?apikey=416ed51a&s=star").then((response) => {
-  handleData(response.data);
-});
+    handleData(result.movies);
+  });
+
+// axios.get("http://omdbapi.com?apikey=416ed51a&s=star").then((response) => {
+//   handleData(response.data);
+// });
 
 // Skapa html :)
-function handleData(data) {
-  console.log(data.Search);
+function handleData(movies) {
+  // console.log(movies);
 
-  for (let i = 0; i < data.Search.length; i++) {
-    console.log(data.Search[i]);
+  for (let i = 0; i < movies.length; i++) {
+    // console.log(movies[i]);
 
     let container = document.createElement("div");
     let title = document.createElement("h3");
     let img = document.createElement("img");
 
-    title.innerHTML = data.Search[i].Title;
-    img.src = data.Search[i].Poster;
-    img.alt = data.Search[i].Title;
+    title.innerHTML = movies[i].title;
+    img.src = movies[i].imageUrl;
+    img.alt = movies[i].title;
 
     container.classList.add("movie");
 
