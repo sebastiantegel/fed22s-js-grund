@@ -69,3 +69,10 @@ Nu börjar det hända saker! Vi kommer att träna lite på att använda promise-
 - [Javascript.info - promises](https://javascript.info/promise-basics)
 - [Axios - axios](https://axios-http.com/)
 - [OmdbAPI - home](http://omdbapi.com/)
+
+## Typescript_Start
+
+Vi skall ge oss in i världen med typescript. Vi kan nu skapa applikationer med hårt typade objekt på riktigt. Vi kommer att ha bättre kontroll över våra variabler och framförallt, vi kommer att hitta buggar innan vi kör vår kod i webbläsaren!
+
+- [Typescriptlang](https://www.typescriptlang.org/)
+- [Parcel och typescript](https://parceljs.org/languages/typescript/#tsc)
