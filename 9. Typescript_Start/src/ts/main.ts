@@ -1,9 +1,25 @@
-let x: number = 4711;
+import { IMovie } from "./models/IMovie";
+import { Person } from "./models/Person";
+let x: number = 17;
 
-console.log(x);
+x = 4711;
 
-// function add(number1: number, number2: number): number {
-//   return number1 + number2;
-// }
+let firstname: string = "Sebastian";
+firstname = "Hanna";
 
-// let sum: number = add(1, 3);
+// firstname = 4711;
+// firstname = x.toString();
+
+let numbers: number[] = [1, 1, 2, 3, 5, 8];
+
+for (let i: number = 0; i < numbers.length; i++) {
+  console.log(i);
+}
+
+let p = new Person("Sebastian", 43);
+
+console.log(p);
+
+let movie: IMovie = { Title: "LOTR", Year: 2000, Poster: "" };
+
+console.log(movie);
