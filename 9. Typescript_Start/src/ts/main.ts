@@ -20,6 +20,6 @@ let p = new Person("Sebastian", 43);
 
 console.log(p);
 
-let movie: IMovie = { Title: "LOTR", Year: 2000, Poster: "" };
+let movie: IMovie = { Title: "LOTR", Year: "2000", Poster: "" };
 
 console.log(movie);
