@@ -1,15 +1,26 @@
+import { ISwapiSearchResponse } from "./models/ISwapiSearchResponse";
 import axios from "axios";
 import { IMovie } from "./models/IMovie";
 import { IMovieExtended } from "./models/IMovieExtended";
 import { IOmdbResponse } from "./models/IOmdbResponse";
 
-axios
-  .get<IOmdbResponse>("http://omdbapi.com?apikey=416ed51a&s=star")
-  .then((response) => {
-    createHTML(response.data.Search);
-  });
+function getMovies(page: number) {
+  axios
+    .get<IOmdbResponse>(
+      "http://omdbapi.com?apikey=416ed51a&s=star&page=" + page
+    )
+    .then((response) => {
+      createHTML(response.data.Search);
+    });
+}
 
 const createHTML = (movies: IMovie[]) => {
+  let moviesContainer: HTMLDivElement = document.getElementById(
+    "moviesContainer"
+  ) as HTMLDivElement;
+
+  moviesContainer.innerHTML = "";
+
   for (let i = 0; i < movies.length; i++) {
     // console.log(movies[i].Title);
 
@@ -29,7 +40,7 @@ const createHTML = (movies: IMovie[]) => {
     container.appendChild(title);
     container.appendChild(img);
 
-    document.body.appendChild(container);
+    moviesContainer.appendChild(container);
   }
 };
 
@@ -67,3 +78,38 @@ const handleClick = (movie: IMovie) => {
       modalBody.appendChild(plot);
     });
 };
+
+function disablePrevButton() {
+  if (currentPage === 1) {
+    document.getElementById("prevPage")?.setAttribute("disabled", "true");
+  } else {
+    document.getElementById("prevPage")?.removeAttribute("disabled");
+  }
+}
+
+let currentPage: number = 1;
+
+document.getElementById("nextPage")?.addEventListener("click", () => {
+  currentPage++;
+  disablePrevButton();
+  getMovies(currentPage);
+});
+
+document.getElementById("prevPage")?.addEventListener("click", () => {
+  if (currentPage === 1) {
+    disablePrevButton();
+  } else {
+    currentPage--;
+    disablePrevButton();
+    getMovies(currentPage);
+  }
+});
+
+getMovies(currentPage);
+disablePrevButton();
+
+axios
+  .get<ISwapiSearchResponse>("https://swapi.dev/api/people/")
+  .then((response) => {
+    console.log(response.data);
+  });
