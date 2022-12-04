@@ -1,6 +1,6 @@
-import { IMovie } from "./../../../../10. Typescript/src/ts/models/IMovie";
-import { IOmdbResponse } from "./../../../../10. Typescript/src/ts/models/IOmdbResponse";
 import axios from "axios";
+import { IMovie } from "../models/IMovie";
+import { IOmdbResponse } from "../models/IOmdbResponse";
 
 // export function searchMovies(): Promise<IMovie[]> {
 //   return axios

@@ -11,6 +11,14 @@ import { searchMovies } from "./services/movieService";
     ).value;
 
     let movies: IMovie[] = await searchMovies(searchText);
+
+    movies = movies.sort((a: IMovie, b: IMovie) => {
+      if (+a.Year > +b.Year) return 1;
+      if (+a.Year < +b.Year) return -1;
+
+      return 0;
+    });
+
     createHtml(movies);
   }
 );
